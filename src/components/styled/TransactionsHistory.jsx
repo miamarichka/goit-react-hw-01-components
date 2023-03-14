@@ -14,8 +14,10 @@ export const TransactionTable = styled.table`
 `;
 
 export const TransactionHeader = styled.th`
+ background-color:#00008B;
+ color:${props => props.theme.colors.white};
  padding-top: 40px;
-`
+`;
 export const TransactionRow = styled.tr`
   background-color: ${isColored};
 `;
