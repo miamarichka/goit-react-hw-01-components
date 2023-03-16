@@ -15,12 +15,12 @@ export const Statistics = ({ title, stats }) => {
       <StatList>
         {stats.map(({ id, label, percentage }) => {
           return (
-            <StatItem>
-              <span className="label" key={id}>
+            <StatItem key={id}>
+              <span className="label">
                 {' '}
                 {label}{' '}
               </span>
-              <span className="percentage" key={id}>
+              <span className="percentage">
                 {' '}
                 {percentage}%{' '}
               </span>
